@@ -1,14 +1,66 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Tutorial
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-row>
+    <ion-col col-10></ion-col>
+    <ion-col col-2>
+      <ion-icon name="md-close-circle" color="danger" icon-right style="font-size: 30px;" (click)="closeTutorial()"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+  <ion-grid>
+    <ion-row>
+      <ion-card>
+        <ion-card-content>
+          <ion-badge color="danger" bottom>1</ion-badge> Escute a biblia em .....
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+          <ion-card-content>
+            <ion-badge color="secondary" bottom>2</ion-badge> Escute os sermoes....
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+            <ion-card-content>
+              <ion-badge color="primary" bottom>3</ion-badge> Leia livros.....
+            </ion-card-content>
+          </ion-card>
+    </ion-row>
+    <br><br>
+    <ion-row text-center>
+      <ion-col> <ion-badge color="danger" bottom>1</ion-badge> </ion-col>
+      <ion-col> <ion-badge color="secondary" bottom>2</ion-badge> </ion-col>
+      <ion-col> <ion-badge color="primary" bottom>3</ion-badge> </ion-col>
+      <ion-col> <ion-badge color="dark" bottom></ion-badge> </ion-col>
+    </ion-row>
+
+    <ion-row text-center>
+      <ion-col>
+        <ion-icon name="book"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-icon name="md-mic"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-icon name="md-bookmarks"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-icon name="md-download"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+      <div text-center>
+        <button  ion-button (click)="irParaDois()">Próximo</button>
+      </div>
+  </ion-toolbar>
+</ion-footer>
